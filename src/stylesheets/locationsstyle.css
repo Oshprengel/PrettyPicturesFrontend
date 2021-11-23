@@ -1,0 +1,27 @@
+#locations,
+#pictures {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  transition: ease-in-out 0.5s;
+}
+.add-button {
+  color: black;
+  background-image: linear-gradient(rgb(22, 250, 110), rgb(60, 200, 118));
+  margin: 10px 0 0 10px;
+  border-radius: 5px;
+  border: 0px;
+  padding: 20px;
+  transition: ease-out 0.5s;
+  height: 75px;
+  width: 200px;
+}
+.add-button:hover {
+  box-shadow: 0 0 0 2px grey;
+}
+#big-plus {
+  font-size: 20px;
+  position: relative;
+  top: 4px;
+  margin: 5px;
+}

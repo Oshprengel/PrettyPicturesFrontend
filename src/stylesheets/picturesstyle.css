@@ -1,0 +1,18 @@
+#back-button {
+  color: black;
+  background-image: linear-gradient(rgb(253, 195, 108), rgb(232, 140, 2));
+  margin: 10px 0 0 10px;
+  border-radius: 5px;
+  border: 0px;
+  padding: 20px;
+  transition: ease-out 0.5s;
+  height: 75px;
+  width: 200px;
+}
+#back-button:hover {
+  box-shadow: 0 0 0 2px black;
+}
+#big-arrow {
+  font-size: 20px;
+  margin: 5px;
+}

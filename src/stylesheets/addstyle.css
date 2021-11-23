@@ -1,0 +1,33 @@
+.add-location,
+.add-picture {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-location-inner,
+.add-picture-inner {
+  position: relative;
+  padding: 32px;
+  width: 100%;
+  max-width: 640px;
+  background-color: whitesmoke;
+  text-align: center;
+}
+#submit {
+  display: block;
+  margin: 0 auto;
+}
+
+.cancel-add {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}

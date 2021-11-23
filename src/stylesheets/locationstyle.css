@@ -1,0 +1,49 @@
+img {
+  height: 200px;
+  width: 300px;
+}
+.location,
+.picture {
+  background-image: linear-gradient(rgba(231, 223, 223, 0.8), grey);
+  border-radius: 25px;
+  padding: 20px 0;
+  height: 400px;
+  width: 350px;
+  text-align: center;
+  margin: 20px;
+  display: inline;
+  text-decoration: none;
+  color: black;
+  transition: ease-in-out 0.3s;
+}
+.location:hover,
+.picture:hover {
+  box-shadow: 6px 6px 5px 5px lightgreen;
+}
+#edit-button,
+#delete-button {
+  background-color: inherit;
+  width: 100px;
+  height: 25px;
+  border-radius: 100px;
+  border: none;
+  transition: 0.2s ease-in-out;
+  text-align: center;
+}
+
+#edit-button:hover {
+  background-color: rgba(234, 147, 61, 0.57);
+}
+#delete-button:hover {
+  background-color: rgba(234, 0, 0, 0.57);
+}
+p {
+  margin: 10px 10px;
+}
+input {
+  display: block;
+  margin: 0 auto;
+}
+input[type="text"] {
+  width: 300px;
+}
