@@ -24,7 +24,7 @@ function Locations(props) {
   //returns the most recent data about all locations
   const getLocations = async()=>{
     //the backend url that retrieves all locations
-    const url = "http://localhost:8000/locations"
+    const url = "https://prettyplacesbackend.herokuapp.com/locations"
 
     const data = await fetch(url, {
       method: "GET",

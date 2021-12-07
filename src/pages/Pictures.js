@@ -23,7 +23,7 @@ function Pictures(props) {
     
     //retrieves pictures for a location of a certain and then sets pictures to the response
     const getPictures = async(location) =>{
-        const url = `http://localhost:8000/locations/${locationName}/`
+        const url = `https://prettyplacesbackend.herokuapp.com/locations/${locationName}/`
 
         const data = await fetch(url, {
             method: "GET",

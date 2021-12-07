@@ -28,7 +28,7 @@ function Picture(props) {
     const handleEdit =  async(event)=>{
         setTypeable(false)
         event.preventDefault()
-        const url = "http://localhost:8000/pictures"
+        const url = "https://prettyplacesbackend.herokuapp.com/pictures"
        fetch(url, {
             method: "PUT",
             headers: {
@@ -44,7 +44,7 @@ function Picture(props) {
     //handles a delete request
     const handleDelete = async()=>{
         console.log(props.picture.id)
-        const url = "http://localhost:8000/pictures"
+        const url = "https://prettyplacesbackend.herokuapp.com/pictures"
         await fetch(url, {
             method:"DELETE",
             headers: {

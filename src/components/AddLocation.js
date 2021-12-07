@@ -21,7 +21,7 @@ function AddLocation(props) {
     //handles submission of the form
     const handleSubmit = async(event)=>{
         event.preventDefault()
-        const url = "http://localhost:8000/locations"
+        const url = "https://prettyplacesbackend.herokuapp.com/locations"
         const response = await fetch(url, {
             method: "POST",
             headers: {

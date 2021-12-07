@@ -36,7 +36,7 @@ function Location(props) {
     const handleEdit =  async(event)=>{
         event.preventDefault()
         setTypeable(false)
-        const url = "http://localhost:8000/locations"
+        const url = "https://prettyplacesbackend.herokuapp.com/locations"
         fetch(url, {
             method: "PUT",
             headers: {
@@ -57,7 +57,7 @@ function Location(props) {
     //handles a delete request
     const handleDelete = async()=>{
         console.log(props.location.id)
-        const url = "http://localhost:8000/locations"
+        const url = "https://prettyplacesbackend.herokuapp.com/locations"
         await fetch(url, {
             method:"DELETE",
             headers: {
