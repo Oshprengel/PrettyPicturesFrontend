@@ -8,6 +8,7 @@ function App() {
   return (
     <>
       <Routes>
+        <Route exact path = "/" element={<Locations/>}/>
         <Route exact path = "/locations" element={<Locations/>}/>
         <Route path ="/locations/:location" element={<Pictures/>}/>
       </Routes>
