@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
+import { Navigate, useNavigate } from 'react-router';
 import "../stylesheets/addstyle.css"
 
 function AddPicture(props) {
+    //for redirecting
+    let navigate = useNavigate()
     //tracks the state of the form 
     const [form, setForm] = useState({
         link:"",
@@ -25,7 +28,7 @@ function AddPicture(props) {
             },
             body:JSON.stringify(form)
         })
-        window.location.reload(true);
+        navigate(0)
     }
     return (props.show)?(
     <div className="add-picture">
