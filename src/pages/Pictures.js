@@ -44,7 +44,7 @@ function Pictures(props) {
                 <AddPicture hide={showAddClick} show={showAdd} locationName={locationName}/>
 
                 <div id="pictures">
-                    {pictures.map(picture => <Picture picture={picture} refresh={getPictures}/>)}``
+                    {pictures.map(picture => <Picture picture={picture} refresh={getPictures}/>)}
                 </div>
             </>
             );
